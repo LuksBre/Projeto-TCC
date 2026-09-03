@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <title>
+   Lucca Pizzeria
+  </title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Lucca Pizzeria" name="description">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script defer src="js/app.js">
+  </script>
+ </head>
+ <body class="home-page">
+  <header class="header container">
+   <a class="brand" href="index.html">
+    LUCCA
+    <small>
+     PIZZERIA
+    </small>
+   </a>
+   <button aria-label="Abrir menu" class="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav">
+    <a href="cardapio.html">
+     CARD&Aacute;PIO
+    </a>
+    <a href="reservas.html">
+     RESERVAS
+    </a>
+    <button aria-label="Abrir carrinho" class="cart-button" data-open-cart>
+     🛍
+     <span data-cart-count>
+      0
+     </span>
+    </button>
+   </nav>
+  </header>
+  <div class="header-line">
+  </div>
+  <main>
+   <section class="hero container">
+    <div class="hero-art">
+     <img alt="Pizza artesanal" src="assets/img/moda-casa.jpg">
+     <div class="hero-copy">
+      <span>
+       LUCCA PIZZERIA
+      </span>
+      <h1>
+       SABOR QUE
+       <br>
+       VIRA MEM&Oacute;RIA
+      </h1>
+      <p>
+       Pizzas artesanais, massa de longa fermenta&ccedil;&atilde;o e ingredientes selecionados.
+      </p>
+      <a class="primary" href="cardapio.html">
+       VER CARD&Aacute;PIO
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="flavors container">
+    <h2>
+     Nossos Sabores
+    </h2>
+    <div class="gold-line">
+    </div>
+    <div class="campaign-grid">
+     <img alt="Campanha sabores" src="assets/img/campanha-1.jpg">
+     <img alt="Campanha pizzas cl&aacute;ssicas" src="assets/img/campanha-2.jpg">
+     <img alt="Campanha sabores especiais" src="assets/img/campanha-3.jpg">
+     <img alt="Campanha pizzas doces" src="assets/img/campanha-4.jpg">
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container footer-content">
+    <span>
+     &copy; 2026 Lucca Pizzeria
+    </span>
+    <nav>
+     <a href="sobre.html">
+      SOBRE
+     </a>
+     <a href="sobre.html#contato">
+      CONTATO
+     </a>
+     <a href="localizacao.html">
+      LOCALIZA&Ccedil;&Atilde;O
+     </a>
+     <a href="localizacao.html#trabalhe">
+      TRABALHE CONOSCO
+     </a>
+    </nav>
+    <div class="social">
+     ◎ ● ◉
+    </div>
+   </div>
+  </footer>
+  <div class="cart-overlay" data-cart-overlay>
+   <aside aria-labelledby="cart-title" aria-modal="true" class="cart-panel" role="dialog">
+    <button aria-label="Fechar" class="close-cart" data-close-cart>
+     &times;
+    </button>
+    <h2 id="cart-title">
+     Seu pedido
+    </h2>
+    <div class="cart-items" data-cart-items>
+    </div>
+    <div class="cart-total">
+     <span>
+      Total
+     </span>
+     <strong data-cart-total>
+      R$ 0,00
+     </strong>
+    </div>
+    <label>
+     Nome
+     <input data-customer-name placeholder="Seu nome">
+    </label>
+    <button class="primary full" data-whatsapp>
+     Finalizar no WhatsApp
+    </button>
+    <button class="text-button" data-clear-cart>
+     Limpar carrinho
+    </button>
+   </aside>
+  </div>
+  <div class="toast" data-toast>
+  </div>
+ </body>
+</html>
